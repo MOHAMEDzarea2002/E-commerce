@@ -1,0 +1,13 @@
+
+
+@media (min-width: 1449px) {
+  .height-500 {
+    height: calc(100vh - 60px) ;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1449px) {
+  .height-500 {
+    height: auto;
+  }
+}
