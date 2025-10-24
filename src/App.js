@@ -7,13 +7,13 @@ import FeaturdProduct from "./component/FeaturedProduct";
 import Cart from "./component/Cart";
 import {CartProvider} from "./component/useCart";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
 
 
   return (
  <CartProvider >
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar />
       </div>
@@ -32,7 +32,7 @@ function App() {
         <Route path="Cart" element={<Cart />} />
         <Route path="product/:ProductId" element={<ProductDetails />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
  </CartProvider>
 
 
