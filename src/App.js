@@ -9,8 +9,6 @@ import {CartProvider} from "./component/useCart";
 
 import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
-
-
   return (
  <CartProvider >
     <HashRouter>
